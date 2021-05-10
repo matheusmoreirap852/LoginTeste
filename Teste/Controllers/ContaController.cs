@@ -27,7 +27,7 @@ namespace Teste.Controllers
                 return View(login);
             }
 
-            var achou = (login.Usuario == "matheus" && login.Senha == "123");
+            var achou = UsuarioModel.ValidarUsuario(login.Usuario, login.Senha);
 
             if (achou)
             {

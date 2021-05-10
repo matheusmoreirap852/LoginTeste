@@ -10,14 +10,14 @@ namespace Teste.Models
     {
         [Required(ErrorMessage = "Informe o usuario")]
         [Display(Name = "Usuário: ")]
-        public string Usuario { get; set; }
+        public string Usuario { get; set; } 
 
         [Required(ErrorMessage = "Informe a senha")]
         [DataType(DataType.Password)]
         [Display (Name = "Senha: ")]
         public string Senha { get; set; }
        
-        [Display(Name = "Lembrar Me")]
+        [Display(Name = "Lembrar Me: ")]
 
         public bool lembrarMe { get; set; }
     }
